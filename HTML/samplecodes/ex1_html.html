@@ -1,0 +1,219 @@
+<html>
+	<head>
+		<title>Learn HTML By Example</title>
+	</head>
+	<body>
+		<h1 id="top">Learn HTML By Example</h1>
+		<a href="#title">title</a><br />
+		<a href="#head">head</a><br />
+		<a href="#semantic_markup">Semantic Markup</a><br />
+		<a href="#link">Link</a>
+
+		<h2>HTML Describes the Structure of Pages</h2>
+		<p>The HTML code (in blue) is made up of characters that live inside angled brackets — these are called HTML <b>elements</b>. Elements are usually made up of two tags: an opening tag and a closing <b>tag</b>. (The closing tag has an extra forward slash in it.) Each HTML element tells the browser something about the information that sits between its opening and closing tags.</p>
+		<p>Tags act like <i>containers</i>. They tell you something about the information that lies between their opening and closing tags.</p>
+		<p><b>Attributes</b> provide additional information about the contents of an element. They appear on the opening tag of the element and are made up of two parts: a <b>name</b> and a <b>value</b>, separated by an equals sign.</p>
+		
+
+		<!-- Body, Head & Title -->
+		<h2 id="body_head_title">Body, Head & Title</h2>
+		
+
+		<!-- body -->
+		<h3 id="body">body: &#60<strong>body</strong>&#62</h3>
+		<p>You met the &#60<strong>body</strong>&#62 element in the first example we created. Everything inside this element is shown inside the main browser window.</p>
+		
+
+		<!-- head -->
+		<h3 id="head">head: &#60<strong>head</strong>&#62</h3>
+		<p>Before the &#60<strong>body</strong>&#62 element you will often see a &#60<strong>head</strong>&#62 element. This contains information about the page (rather than information that is shown within the main part of the browser window that is highlighted in blue on the opposite page). You will usually find a &#60<strong>title</strong>&#62 element inside the &#60<strong>head</strong>&#62 element.</p>
+		
+
+		<!-- title -->
+		<h3 id="title">title: &#60<strong>title</strong>&#62</h3>
+		<p>The contents of the &#60<strong>title</strong>&#62 element are either shown in the top of the browser, above where you usually type in the URL of the page you want to visit, or on the tab for that page (if your browser uses tabs to allow you to view multiple pages at the same time).</p>
+
+
+		<!-- Superscript & Subscript -->
+		<h3>Superscript & Subscript: &#60<strong>sup</strong>&#62, &#60<strong>sub</strong>&#62</h3>
+		<p>The &#60<strong>sup</strong>&#62 element is used to contain characters that should be superscript such as the suffixes of dates or
+        mathematical concepts like raising a number to a power such as 2<sup>2</sup>.</p>
+		<p>The &#60<strong>sub</strong>&#62 element is used to contain characters that should be subscript. It is commonly used with foot notes or chemical formulas such as H<sub>2</sub>O</p>
+		
+
+		<!-- White Space	 -->
+		<h3>White Space</h3>
+		<p>In order to make code easier to read, web page authors often add extra spaces or start some elements on new lines. When the browser comes across                         two or more spaces next to each other, it only displays one space.
+        Similarly if it comes across a line break, it treats that as a single space too. This is known as white space collapsing.</p>
+
+
+        <!-- Line Breaks & Horizontal Rules -->
+        <h3>Line Breaks & Horizontal Rules: &#60<strong>br /</strong>&#62, &#60<strong>hr /</strong>&#62</h3>
+        <p>Line break <br />inside the middle <br />of a paragraph.</p>
+        <p>Horizontal Rules<hr />Adding a horizontal rule between sections.</p>
+
+
+        <!-- Semantic Markup -->
+        <h2 id="semantic_markup">Semantic Markup</h2>
+
+
+        <!-- Strong and Emphasis -->
+        <h3>Strong and Emphasis: &#60<strong>strong</strong>&#62, &#60<strong>em</strong>&#62</h3>
+        <p>The use of the &#60<strong>strong</strong>&#62 element indicates that its content has strong importance.<br /> For example, the words contained in this element might be said with strong emphasis.<br />The &#60<strong>em</strong>&#62 element indicates emphasis that subtly changes the meaning of a sentence.</p>
+
+
+        <!-- Quotations -->
+        <h3>Quotations: &#60<strong>blockquote</strong>&#62, &#60<strong>q</strong>&#62</h3>
+        <blockquote>
+        	<p>The &#60<strong>blockquote</strong>&#62 element is used for longer quotes that take up an entire paragraph.</p>
+        </blockquote>
+        <p>Note how the <em>p</em> element is still used inside the <em>blockquote</em> element.</p>
+        <p>The &#60<strong>q</strong>&#62 element is used for <q>shorter quotes</q> that sits within a paragraph.</p>
+
+
+        <!-- Abbreviations and Acronyms -->
+        <h3>Abbreviations and Acronyms: &#60<strong>abbr</strong>&#62</h3>
+        <p>If you use an abbreviation or an acronym, then the &#60<strong>abbr</strong>&#62 element can be used. A title attribute on the opening tag is used to specify the full term.<br />For example, <abbr title-"Doctor">Dr</abbr> John Smith is a cardiologist.</p>
+
+
+        <!-- Citations and Definitions -->
+        <h3>Citations and Definitions: &#60<strong>cite</strong>&#62, &#60<strong>dfn</strong>&#62</h3>
+        <p>When you are <cite>referencing a piece of work</cite> such as a book, film or research paper, the &#60<strong>cite</strong>&#62</h3> element can be used to indicate where the citation is from.</p>
+        <p>The <dfn>first time</dfn> you explain some new terminology (perhaps an academic concept or some jargon) in a document, it is known as the defining instance of it. The &#60<strong>dfn</strong>&#62 element is used to indicate the defining instance of a new term.</p>
+
+
+        <!-- Author Details -->
+        <h3>Author Details: &#60<strong>address</strong>&#62</h3>
+        <p>The &#60<strong>address</strong>&#62</h3> element has quite a specific use: to contain contact details for the author of the page.<br /> For Example,</p>
+        <address>
+        	<p><a href-"mailto:abc@example.com">
+        	abc@example.com</a></p>
+        	<p>123 Pepper Tree Ln, Poway.</p>
+        </address>
+
+
+        <!-- Changes to Content -->
+        <h3>Changes to Content: &#60<strong>ins</strong>&#62, &#60<strong>del</strong>&#62, &#60<strong>s</strong>&#62</h3>
+        <p>The &#60<strong>ins</strong>&#62 element can be used to show content that has been inserted into a document, while the &#60<strong>del</strong>&#62 element can show text that has been deleted from it.<br /> For Example,</p>
+        <p>It was the <del>worst</del> <ins>best</ins> idea she had ever had.</p>
+        <p>The &#60<strong>s</strong>&#62</h3> element indicates something that is no longer accurate or relevant (but that should not be deleted).<br /> For Example,</p>
+        <p>Laptop computer:</p>
+		<p><s>Was $995</s></p>
+		<p>Now only $375</p>
+
+
+		<!-- Unordered List -->
+		<h3>Ordered List: &#60<strong>ol</strong>&#62, &#60<strong>li</strong>&#62</h3>
+		<p>The ordered list is created with the &#60<strong>ol</strong>&#62 element.</p>
+		<p>Each item in the list is placed between an opening &#60<strong>li</strong>&#62 tag and a closing &#60<strong>/li</strong>&#62 tag. (The li stands for list item).<br /> For Example,</p>
+		<ol>
+			<li>Chop potatoes into quarters</li>
+			<li>Simmer in salted water for 15-20
+				minutes until tender</li>
+			<li>Heat milk, butter and nutmeg</li>
+			<li>Drain potatoes and mash</li>
+			<li>Mix in the milk mixture</li>
+		</ol>
+
+
+		<!--Unordered List -->
+        <h3>Unordered List: &#60<strong>ul</strong>&#62, &#60<strong>li</strong>&#62</h3>
+        <p>The unordered list is created with the &#60<strong>ul</strong>&#62 element.<br /> For Example,</p>
+        <ul>
+			<li>1kg King Edward potatoes</li>
+			<li>100ml milk</li>
+			<li>50g salted butter</li>
+			<li>Freshly grated nutmeg</li>
+			<li>Salt and pepper to taste</li>
+		</ul>
+
+
+		<!-- Definition Lists -->
+		<h3>Definition Lists: &#60<strong>dl</strong>&#62, &#60<strong>dt</strong>&#62, &#60<strong>dd</strong>&#62</h3>
+        <p>The definition list is created with the &#60<strong>dl</strong>&#62 element and usually consists of a series of terms and their definitions.<br />Inside the &#60<strong>dl</strong>&#62 element you will usually see pairs of &#60<strong>dt</strong>&#62 and &#60<strong>dd</strong>&#62 elements.<br />&#60<strong>dt</strong>&#62 is used to contain the term being defined (the definition term).<br /> &#60<strong>dd</strong>&#62 is used to contain the definition.<br />For Example,</p>
+        <dl>
+			<dt>Sashimi</dt>
+			<dd>Sliced raw fish that is served with
+				condiments such as shredded daikon radish or
+				ginger root, wasabi and soy sauce</dd>
+			<dt>Scale</dt>
+			<dd>A device used to accurately measure the
+				weight of ingredients</dd>
+			<dd>A technique by which the scales are removed
+				from the skin of a fish</dd>
+			<dt>Scamorze</dt>
+			<dt>Scamorzo</dt>
+			<dd>An Italian cheese usually made from whole
+				cow's milk (although it was traditionally made
+				from buffalo milk)</dd>
+		</dl>
+
+
+		<!-- Nested List -->
+		<h3>Nested Lists: &#60<strong>li</strong>&#62, &#60<strong>ul</strong>&#62</h3>
+        <p>You can put a second list inside an &#60<strong>li</strong>&#62 element to create a sublist or nested list.<br /> For Example,</p>
+        <ul>
+			<li>Mousses</li>
+			<li>Pastries
+				<ul>
+					<li>Croissant</li>
+					<li>Mille-feuille</li>
+					<li>Palmier</li>
+					<li>Profiterole</li>
+				</ul>
+			</li>
+			<li>Tarts</li>
+		</ul>
+
+
+		<!-- Links -->
+		<!-- Creating links between pages -->
+		<!-- Linking to other sites -->
+		<!-- Email links -->
+		<h2 id="link">Links</h2>
+		<h3>Writing Links: &#60<strong>a</strong>&#62</h3>
+
+
+		<!-- Linking to Other Sites -->
+		<h4>Linking to Other Sites</h4>
+		<p>Links are created using the &#60<strong>a</strong>&#62 element. Users can click on anything between the opening &#60<strong>a</strong>&#62 tag and the closing &#60<strong>/a</strong>&#62 tag. You specify which page you want to link to using the href attribute.<br /> For Example,</p>
+		<p><a href="https://www.youtube.com/results?search_query=html+tutorial+for+beginners"> HTML tutorial for beginners</a></p>
+
+
+		<!-- Linking to Other Pages on the Same Site -->
+		<h4>Linking to Other Pages on the Same Site</h4>
+		<p>When you are linking to other pages within the same site, you do not need to specify the domain name in the URL. You can use a shorthand known as arelative URL.<br />If all the pages of the site are in the same folder, then the value of the href attribute is just the name of the file.<br /> For Example,</p>
+		<p><a href="ex1_recipe.html">Recipe</a></p>
+
+
+		<!-- Email Links -->
+		<h4>Email Links</h4>
+		<a href="mailto:Sky@example.org">Email Sky</a>
+
+
+		<!-- Opening Links in a New Window -->
+		<h4>Opening Links in a New Window</h4>
+		<p>If you want a link to open in a new window, you can use the target attribute on the opening &#60<strong>a</strong>&#62 tag. The value of this attribute should be _blank.<br /> For Example,</p>
+		<a href="https://www.youtube.com/results?search_query=html+tutorial+for+beginners" target="_blank"> HTML tutorial for beginners</a> (opens in new window)
+
+
+		<!-- Linking to a Specific Part of the Same Page -->
+		<h4>Linking to a Specific Part of the Same Page</h4>
+		<p>At the top of a long page you might want to add a list of contents that links to the corresponding sections lower down. Or you might want to add a link from part way down the page back to the top of it to save users from having to scroll back to the top.</p>
+		<p>Before you can link to a specific part of a page, you need to identify the points in the page that the link will go to. You do this using the <b>id</b> attribute (which can be used on every HTML element). You can see that the &#60<strong>h1</strong>&#62 and &#60<strong>h2</strong>&#62 elements in this example have been given <b>id</b> attributes that identify those sections of the page.</p>
+		<p>The value of the <b>id</b> attribute should start with a letter or an underscore (not a number or any other character) and, on a single page, no two <b>id</b> attributes should have the same value.</p>
+		<p>To link to an element that uses an id attribute you use the &#60<strong>a</strong>&#62 element again, but the value of the href attribute starts with the # symbol, followed by the value of the id attribute of the element you want to link to. In this example, &#60a href="#top"&#62 links to the &#60h1&#62 element at the top of the page whose id attribute has a value of top.<br /> For Example,</p>
+		<p><a href="#body_head_title">Body, Head & Title </a><br />
+		<a href="#title">title</a><br />
+		<a href="#head">head</a><br />
+		<a href="#top">Top</a></p>
+
+
+		<!-- Linking to a Specific Part of Another Page -->
+		<h4>Linking to a Specific Part of Another Page</h4>
+		<p>The <b>href</b> attribute will contain the address for the page (either an absolute URL or a relative URL), followed by the <b>#</b> symbol, followed by the value of the <b>id</b> attribute that is used on the element you are linking to.<br /> For Example,</p>
+		<p><a href="file:///Users/santanusarma/Dropbox/Jagriti/Programming/Web%20Design/HTML/samplecodes/ex1_recipe.html#method"></a>
+
+
+	</body>
+</html>

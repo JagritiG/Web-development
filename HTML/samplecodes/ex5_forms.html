@@ -1,0 +1,181 @@
+<head>
+		<title>Forms</title>
+	</head>
+	<body>
+		<!-- Creating Forms-->
+		<h2>Creating Forms</h2>
+		<p>Form collects information from visitors to the site.</p>
+		
+
+		<!-- Form Structure -->
+		<h3>Form Structure</h3>
+		<p>Form controls live inside a &#60<strong>form</strong>&#62 element. This element should always carry the <b>action</b> attribute and will usually have a <b>method</b> and <b>id</b> attribute too.
+		<p>The value of <b>action</b> is the URL for the page on the server that will receive the information in the form when it is submitted.</p>
+		<p>Forms can be sent using one of two methods: get or post. The get method is ideal for short forms (such as search
+ 		boxes).The post method is used when form allows user to upload a file, form is very long, ocontains sensitive data, or adds information to, or delete information from, a database.<br />For example,</p>
+ 		<hr />
+ 		<form action="http://www.example.com/subscribe.php"
+			method="get">
+			<p>This is where the form controls will appear.</p>
+		</form>
+		<hr />
+
+
+		<!-- Text Input -->
+		<h3>Text Input: &#60<strong>input</strong>&#62</h3>
+		<p>Attributes: <b>type</b>="text", <b>name</b>="username", <b>size</b> (width of the text), and <b>maxlength</b> (the limit of number of characters user can enter).</p>
+		<p>Example:</p>
+		<form action="http://www.example.com/login.php">
+			<p>Username:
+				<input type="text" name="username" size="15" maxlength="30" />
+			</p>
+		</form>
+		<hr />
+
+
+		<!-- Password Input -->
+		<h3>Password Input: &#60<strong>input</strong>&#62</h3></h3>
+		<p>Attributes: <b>type</b>="password", <b>name</b>="password", <b>size</b> (width of the text), and <b>maxlength</b> (the limit of number of characters user can enter).</p>
+		<p>Example:</p>
+		<form action="http://www.example.com/login.php">
+			<p>Password:
+				<input type="password" name="password" size="15" maxlength="30" />
+			</p>
+		</form>
+		<hr />
+		<form action="http://www.example.com/login.php">
+			<p>Username:
+				<input type="text" name="username" size="15" maxlength="30" />
+			</p>
+			<p>Password:
+				<input type="password" name="password" size="15" maxlength="30" />
+			</p>
+		</form>
+		<hr />
+
+
+		<!-- Text Area -->
+		<h3>Text Area: &#60<strong>textarea</strong>&#62</h3>
+		<p>The &#60<strong>textarea</strong>&#62</h3> element is used to create a mutli-line text input.</p>
+		<p>Example:</p>
+		<form action="http://www.example.com/comments.php">
+			<p>Write a brief description</p>
+			<textarea name="comments" cols="40" rows="4">Enter your comments...</textarea>
+		</form>
+		<hr />
+
+
+		<!-- Radio Button -->
+		<h3>Radio Button</h3>
+		<p>Attributes: <b>type</b>="radio", <b>name</b>, <b>value</b> (indicates the value that is sent to the server for the selected option), and <b>checked</b>="checked" (indicate which value (if any) should be selected when the page loads).</p>
+		<p>Example:</p>
+		<form action="http://www.example.com/profile.php">
+			<p>Please select your sex:
+				<br />
+				<input type="radio" name="sex" value="female"
+					checked="checked" /> female
+				<input type="radio" name="sex" value="male" />
+					male
+			</p>
+		</form>
+		<hr />
+
+
+		<!-- Checkbox -->
+		<h3>Checkbox</h3>
+		<p>Attributes: <b>type</b>="checkbox", <b>name</b>, <b>value</b>(indicates the value that is sent to the server for the selected option), and <b>checked</b>="checked" (indicate which value (if any) should be selected when the page loads).</p>
+		<p>Example:</p>
+		<form action="http://www.example.com/profile.php">
+			<p>Please select your favorite music service(s):
+				<br />
+				<input type="checkbox" name="service"
+					value="itunes" checked="checked" /> iTunes
+				<input type="checkbox" name="service"
+					value="lastfm" /> Last.fm
+				<input type="checkbox" name="service"
+					value="spotify" /> Spotify
+			</p>
+		</form>
+		<hr />
+
+
+		<!-- Drop Down List Box -->
+		<h3>Drop Down List Box: </h3>
+		<p>&#60<strong>select</strong>&#62<br />Attributes: <b>name</b><br />&#60<strong>select</strong>&#62<br />Attributes: <b>value</b>(indicates the value that is sent to the server for the selected option), and <b>selected</b> (indicate the option that should be selected when the page loads.)</p>
+		<p>Example:</p>
+		<form action="http://www.example.com/profile.php">
+			<p>What device do you listen to music on?</p>
+			<select name="devices">
+				<option value="ipod">iPod</option>
+				<option value="radio">Radio</option>
+				<option value="computer">Computer</option>
+			</select>
+		</form>
+		<hr />
+
+
+		<!-- Multiple Select Box -->
+		<h3>Multiple Select Box: </h3>
+		<p>&#60<strong>select</strong>&#62<br />Attributes: <b>size</b>, <b>smultiple</b> (allows users to select multiple options from this list by adding the multiple attribute with a value of multiple.)</p>
+		<p>Example:</p>
+		<form action="http://www.example.com/profile.php">
+		<p>Do you play any of the following instruments?
+			(You can select more than one option by holding
+			down control on a PC or command key on a Mac
+			while selecting different options.)</p>
+		<select name="instruments" size="3"
+			multiple="multiple">
+			<option value="guitar" selected="selected">
+				Guitar</option>
+			<option value="drums">Drums</option>
+			<option value="keyboard"
+				selected="selected">Keyboard</option>
+			<option value="bass">Bass</option>
+		</select>
+		</form>
+		<hr />
+
+
+		<!-- File Input Box -->
+		<h3>File Input Box: </h3>
+		<p>&#60<strong>input</strong>&#62<br />Attributes: <b>type</b>="file"</p>
+		<p>Example:</p>
+		<form action="http://www.example.com/upload.php"
+			method="post">
+			<p>Upload your song in MP3 format:</p>
+			<input type="file" name="user-song" /><br />
+			<input type="submit" value="Upload" />
+		</form>
+		<hr />
+
+		<!-- Submit Button -->
+		<h3>Submit Button: </h3>
+		<p>&#60<strong>input</strong>&#62<br />Attributes: <b>type</b>="submit", <b>name</b>, <b>value</b></p>
+		<p>Example:</p>
+		<form action="http://www.example.com/subscribe.php">
+			<p>Subscribe to our email list:</p>
+			<input type="text" name="email" />
+			<input type="submit" name="subscribe"
+				value="Subscribe" />
+		</form>
+		<hr />
+
+		<!-- Image Button -->
+		<h3>Image Button: </h3>
+		<p>&#60<strong>input</strong>&#62<br />Attributes: <b>type</b>="image"</p>
+		<p>Example:</p>
+		<form action="http://www.example.org/subscribe.php">
+			<p>Subscribe to our email list:</p>
+			<input type="text" name="email" />
+			<input type="image" src="../images/image_subscribe.jpg"
+				width="100" height="20" />
+		</form>
+
+
+
+
+
+
+
+	</body>
+</html>

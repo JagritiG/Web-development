@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Links</title>
+	</head>
+	<body>
+		<!-- Links -->
+		<!-- Creating links between pages -->
+		<!-- Linking to other sites -->
+		<!-- Email links -->
+		<h2 id="link">Links</h2>
+		<h3>Writing Links: &#60<strong>a</strong>&#62</h3>
+
+
+		<!-- Linking to Other Sites -->
+		<h4>Linking to Other Sites</h4>
+		<p>Links are created using the &#60<strong>a</strong>&#62 element. Users can click on anything between the opening &#60<strong>a</strong>&#62 tag and the closing &#60<strong>/a</strong>&#62 tag. You specify which page you want to link to using the href attribute.<br /> For Example,</p>
+		<p><a href="https://www.youtube.com/results?search_query=html+tutorial+for+beginners"> HTML tutorial for beginners</a></p>
+
+
+		<!-- Linking to Other Pages on the Same Site -->
+		<h4>Linking to Other Pages on the Same Site</h4>
+		<p>When you are linking to other pages within the same site, you do not need to specify the domain name in the URL. You can use a shorthand known as arelative URL.<br />If all the pages of the site are in the same folder, then the value of the href attribute is just the name of the file.<br /> For Example,</p>
+		<p><a href="ex1_recipe.html">Recipe</a></p>
+
+
+		<!-- Email Links -->
+		<h4>Email Links</h4>
+		<a href="mailto:Sky@example.org">Email Sky</a>
+
+
+		<!-- Opening Links in a New Window -->
+		<h4>Opening Links in a New Window</h4>
+		<p>If you want a link to open in a new window, you can use the target attribute on the opening &#60<strong>a</strong>&#62 tag. The value of this attribute should be _blank.<br /> For Example,</p>
+		<a href="https://www.youtube.com/results?search_query=html+tutorial+for+beginners" target="_blank"> HTML tutorial for beginners</a> (opens in new window)
+
+
+		<!-- Linking to a Specific Part of the Same Page -->
+		<h4>Linking to a Specific Part of the Same Page</h4>
+		<p>At the top of a long page you might want to add a list of contents that links to the corresponding sections lower down. Or you might want to add a link from part way down the page back to the top of it to save users from having to scroll back to the top.</p>
+		<p>Before you can link to a specific part of a page, you need to identify the points in the page that the link will go to. You do this using the <b>id</b> attribute (which can be used on every HTML element). You can see that the &#60<strong>h1</strong>&#62 and &#60<strong>h2</strong>&#62 elements in this example have been given <b>id</b> attributes that identify those sections of the page.</p>
+		<p>The value of the <b>id</b> attribute should start with a letter or an underscore (not a number or any other character) and, on a single page, no two <b>id</b> attributes should have the same value.</p>
+		<p>To link to an element that uses an id attribute you use the &#60<strong>a</strong>&#62 element again, but the value of the href attribute starts with the # symbol, followed by the value of the id attribute of the element you want to link to. In this example, &#60a href="#top"&#62 links to the &#60h1&#62 element at the top of the page whose id attribute has a value of top.<br /> For Example,</p>
+		<p><a href="#body_head_title">Body, Head & Title </a><br />
+		<a href="#title">title</a><br />
+		<a href="#head">head</a><br />
+		<a href="#top">Top</a></p>
+
+
+		<!-- Linking to a Specific Part of Another Page -->
+		<h4>Linking to a Specific Part of Another Page</h4>
+		<p>The <b>href</b> attribute will contain the address for the page (either an absolute URL or a relative URL), followed by the <b>#</b> symbol, followed by the value of the <b>id</b> attribute that is used on the element you are linking to.<br /> For Example,</p>
+		<a href="file:///Users/santanusarma/Dropbox/Jagriti/Programming/Web%20Design/HTML/samplecodes/ex1_html.html#body_head_title">Body, Head, Title</a>
+	</body>
+</html>

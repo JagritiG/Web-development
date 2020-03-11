@@ -1,0 +1,187 @@
+<head>
+		<title>Tables</title>
+	</head>
+	<body>
+		<!-- Creating tables-->
+		<h2>Creating Tables</h2>
+		<h3>Basic Table Structure: &#60<strong>table</strong>&#62, &#60<strong>tr</strong>&#62, &#60<strong>td</strong>&#62, &#60<strong>th</strong>&#62</h3>
+		<p>The &#60<strong>table</strong>&#62 element is used to create a table. The contents of the table are written out row by row.</p>
+		
+		<p>The &#60<strong>tr</strong>&#62 indicates the start of each row using the opening <tr> tag. (The tr stands for table row).<br /> It is followed by one or more &#60<strong>td</strong>&#62 elements (one for each cell in that row).<br /> At the end of the row you use a closing &#60<strong>tr</strong>&#62 tag.</p>
+		
+		<p>The &#60<strong>td</strong>&#62 represents each cell of a table.(The td stands for table data.)</p>
+
+		<p>The &#60<strong>th</strong>&#62 is used just like the &#60<strong>td</strong>&#62 element but its purpose is to represent the heading for either a column or a row.<br /> (The th stands for table heading). For Example,</p>
+		<table>
+			<tr>
+				<th scope="col">Country</th>
+				<th scope="col">Population</th>
+				<th scope="col">Male</th>
+				<th scope="col">Female</th>
+			</tr>
+			<tr>
+				<td scope="row">United States</th>
+				<td>120M</td>
+				<td>70M</td>
+				<td>50M</td>
+			</tr>
+			<tr>
+				<td scope="row">India</th>
+				<td>220M</td>
+				<td>150M</td>
+				<td>70M</td>
+			</tr>
+			<tr>
+				<td scope="row">France</th>
+				<td>90M</td>
+				<td>40M</td>
+				<td>50M</td>
+			</tr>
+		</table>
+		<hr />
+
+
+		<!-- Spanning Columns -->
+		<h4>Spanning Columns:</h4>
+		<p>Sometimes you may need the entries in a table to stretch across more than one column.<br /> The <b>colspan</b>  attribute can be used on a &#60<strong>th</strong>&#62 or &#60<strong>td</strong>&#62 element and indicates how many columns that cell should run across.<br /> For example,</p>
+		<table>
+			<tr>
+				<th></th>
+				<th>9am</th>
+				<th>10am</th>
+				<th>11am</th>
+				<th>12am</th>
+			</tr>
+			<tr>
+				<th>Monday</th>
+				<td colspan="2">Geography</td>
+				<td>Math</td>
+				<td>Art</td>
+			</tr>
+			<tr>
+				<th>Tuesday</th>
+				<td colspan="3">Gym</td>
+				<td>Home Ec</td>
+			</tr>
+		</table>
+		<hr />
+
+
+		<!-- Spanning Rows -->
+		<h4>Spanning Rows:</h4>
+		<p>Sometimes you may need the entries in a table to stretch across more than one row.<br /> The <b>rowspan</b>  attribute can be used on a &#60<strong>th</strong>&#62 or &#60<strong>td</strong>&#62 element and indicates how many columns that cell should run across.<br /> For example,</p>
+		<table>
+			<tr>
+				<th></th>
+				<th>ABC</th>
+				<th>BBC</th>
+				<th>CNN</th>
+			</tr>
+			<tr>
+				<th>6pm - 7pm</th>
+				<td rowspan="2">Movie</td>
+				<td>Comedy</td>
+				<td>News</td>
+			</tr>
+			<tr>
+				<th>7pm - 8pm</th>
+				<td>Sport</td>
+				<td>Current Affairs</td>
+			</tr>
+		</table>
+		<hr />
+
+
+		<!-- Long Tables -->
+		<h4>Long Tables: &#60<strong>thead</strong>&#62, &#60<strong>tbody</strong>&#62, &#60<strong>tfoot</strong>&#62</h4>
+		<p>The headings of the table should sit inside the &#60<strong>thead</strong>&#62 element.<br />The body should sit inside the &#60<strong>tbody</strong>&#62 element.<br />The footer belongs inside the &#60<strong>tfoot</strong>&#62</h4> element.<br /> For example,</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Date</th>
+					<th>Income</th>
+					<th>Expenditure</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>1st January</th>
+					<td>250</td>
+					<td>36</td>
+					</tr>
+				<tr>
+					<th>2nd January</th>
+					<td>285</td>
+					<td>48</td>
+				</tr>
+				<!-- additional rows as above -->
+				<tr>
+					<th>31st January</th>
+					<td>129</td>
+					<td>64</td>
+				</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td></td>
+						<td>7824</td>
+						<td>1241</td>
+					</tr>
+			</tfoot>
+		</table>
+
+		<hr />
+
+		<!-- Width & Spacing -->
+		<h4>Width & Spacing:</h4>
+		<p>The <b>width</b> attribute was used on the opening &#60<strong>table</strong>&#62 tag to indicate how wide that table should be and on some opening &#60<strong>th</strong>&#62 and &#60<strong>td</strong>&#62 tags to specify the width of individual cells. The value of this attribute is the width of the table or cell in pixels.</p>
+		<p>The opening &#60<strong>table</strong>&#62 tag could also use the <b>cellpadding</b> attribute to add space inside each cell of the table, and the cellspacing attribute to create space between each cell of the table. The values for these attributes were given in pixels.<br />For example,</p>
+		<table width="400" cellpadding="10" cellspacing="5">
+			<tr>
+				<th width="150"></th>
+				<th>Withdrawn</th>
+				<th>Credit</th>
+				<th width="150">Balance</th>
+			</tr>
+			<tr>
+				<th>January</th>
+				<td>250.00</td>
+				<td>660.50</td>
+				<td>410.50</td>
+			</tr>
+			<tr>
+				<th>February</th>
+				<td>135.55</td>
+				<td>895.20</td>
+				<td>1170.15</td>
+			</tr>
+		</table>
+		<hr />
+
+
+		<!-- Border & Background -->
+		<h4>Border & Background:</h4>
+		<p>The border <b>attribute</b> was used on both the &#60<strong>th</strong>&#62 and &#60<strong>td</strong>&#62 elements to indicate the width of the border in pixels.</p>
+		<p>The <b>bgcolor</b> attribute was used to indicate background colors of either the entire table or individual table cells.<br />For example,</p>
+		<table border="2" bgcolor="#efefef">
+			<tr>
+				<th width="150"></th>
+				<th>Withdrawn</th>
+				<th>Credit</th>
+				<th width="150" bgcolor="#cccccc">Balance</th>
+			</tr>
+			<tr>
+				<th>January</th>
+				<td>250.00</td>
+				<td>660.50</td>
+				<td bgcolor="#cccccc">410.50</td>
+			</tr>
+			<tr>
+				<th>February</th>
+				<td>135.55</td>
+				<td>895.20</td>
+				<td bgcolor="#cccccc">1170.15</td>
+			</tr>
+		</table>	
+	</body>
+</html>
